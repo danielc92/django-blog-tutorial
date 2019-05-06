@@ -10,7 +10,24 @@ Concepts to be familiar with
 - Python 3.7 knowledge
 - Html/Css
 
+# Process
+1. Creating/activating a virtualenv including django using `virtualenv`
+2. Creating a django project with `django-admin startproject <name>`
+3. Creating an app with `python manage.py startapp <appname>`. Add app to `INSTALLED_APPS` in `settings.py`
+4. Setting up database engine to MySQL (default is sqlite). `python manage.py makemigrations <app name>` to migrate database ORM to migrations folder within app directory. `python manage.py migrate` to create tables (apply migrations).
+5. Adding templates directory, views & urls
+6. 
+
 # Setup
+
+**How to install MYSQL on Ubuntu**
+```sh
+sudo apt-get install python-dev default-libmysqlclient-dev python3-dev
+sudo apt update
+sudo apt install mysql-server
+sudo mysql_secure_installation
+```
+
 **How to obtain this repository:**
 ```sh
 git clone https//link.to.this.projects.git-repo
